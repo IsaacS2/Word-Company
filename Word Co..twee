@@ -1,0 +1,552 @@
+:: StoryTitle
+Word Co.
+
+
+:: StoryData
+{
+  "ifid": "87FB9EBB-C4BF-4CF7-ACEF-ACA655FCA22B",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Intro",
+  "zoom": 0.6
+}
+
+
+:: A Hero {"position":"1725,1125","size":"100,100"}
+Alex:
+
+(align:"=><=")["Wow, (text-style:"underline")[you're really being a hero] cleaning up that yogurt lid."]
+
+Probably not ribbing me...
+[[Use sarcasm scanner|A Hero with Scanner]]
+[[Respond to current statement|A Hero Normal]]
+
+
+:: A Hero Normal {"position":"1850,1000","size":"100,100"}
+With your cover blown, you remove your suit an reveal yourself to be "Litter Languisher", enemy of litter around the world.
+
+However, Alex is unimpressed with your grass green underwear costume and continues eating her yogurt, dumping her container on the floor before [[leaving|Break Room Hallway]]...
+
+
+:: A Hero Sarcasm {"position":"1975,1125","size":"100,100"}
+"Yeah, well maybe you could be my sidekick if you cleaned up your shit."
+
+Alex slightly smiles from your slightly embarassing, but confident, retort. She tosses her yogurt container in the garbage before leaving the [[break room|Break Room Hallway]].
+
+(set: $Ally to it + 1)
+
+
+:: A Hero with Scanner {"position":"1850,1125","size":"100,100"}
+Alex:
+
+(align:"=><=")["Wow, no one cares that you're cleaning up that yogurt lid."]
+
+[[Rethink statement|A Hero]]
+[[Respond to current statement|A Hero Sarcasm]]
+
+
+:: Alex {"position":"1600,1125","size":"100,100"}
+As you pick up the lid, you see another co-worker enjoying a recently opened yogurt. 
+
+Her name tag says [["Alex"|A Hero]].
+
+
+:: Bathroom {"position":"1475,875","size":"100,100"}
+You enter the bathroom. The interior is rather clean, although it may be cause barely anyone uses it since bathroom breaks eat away at payed hours.
+
+While on the toliet, you get a phone call from a familiar, yet strange number.
+
+[[Answer phone|Phone Call]]
+
+
+:: Bathroom Hallway {"position":"1050,625","size":"100,100"}
+As you wash up and leave the bathroom, another co-worker begins walking beside you, seemingly having waited for you to come out the crapper.
+
+"Hi, new friend, Sam here. I was just wondering if you brought that [[cake|Cake Responsibility]] in for Jessie's birthday.
+
+
+:: Boss Office {"position":"1400,750","size":"100,100"}
+Walking into the office, you see a tall man, smoking an exclamation point.
+
+By his side is Barry, shaking nervously.
+
+Boss: "So you're the other new employee, the one who can apparently time travel."
+
+
+
+[["Yes, sir..."|Exposed]]
+[["That's me!"|Exposed]]
+
+
+:: Break Room {"position":"1600,1000","size":"100,100"}
+The break room emanates the smell of burnt tortillas and crispy toast.
+
+Trotting past the counter, you see yogurt lid plastered on the door.
+
+[[Pick up wrapper|Alex]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Break Room Hallway {"position":"1975,1000","size":"100,100"}
+Leaving the breakroom as well, you hear other co-workers chatting about which words would win in a (link-reveal:"fight")[(text-colour:lime)[ (you notice John arguing with Alex about how "whom" is way more powerful than "who")]].
+
+You easedropping is interrupted by [[Barry|Mentor's lie]].
+
+
+:: Cake Responsibility {"position":"1100,500","size":"100,100"}
+Sam:
+
+(align:"=><=")[I know you're new, but ''you probably received an email about it, and it's your turn to bring in birthday cakes according to our cake wheel'', soooooooo................"]
+
+
+
+[[Use ribbing revolver|Cake Responsibility Revolver]]
+Probably not sarcasm...
+[[Use lie laser|Cake Responsibility Laser]]
+[[Respond to current statement|Cake Responsibility Normal]]
+
+
+:: Cake Responsibility Laser {"position":"1150,375","size":"100,100"}
+Sam:
+
+(align:"=><=")[I know you're new, but I'm making you take the responsibility of getting the cake, soooooooo................"]
+
+
+
+[[Rethink statement|Cake Responsibility]]
+[[Respond to current statement|Cake Responsibility Lie]]
+
+
+:: Cake Responsibility Lie {"position":"1525,250","size":"100,100"}
+"Hang on, I never got an email about any of this. I think you forgot to get the cake!"
+
+Sam looks down, sighs, and then dissolves into a pristine cake.
+
+You place the cake onto the break room table before return to your [[desk|Chilling at Desk]].
+
+(set: $Ally to it + 1)
+
+
+:: Cake Responsibility Normal {"position":"1250,500","size":"100,100"}
+"Oh, ok. I guess I'll grab it now."
+
+You dash to the nearby (link-reveal:"bakery ")[(text-colour:lime)[(which is convienently across the street)]].
+
+Being donut season, all cakes on display have being brutally impaled to replicate the donut style.
+
+A casher appears behind the counter to [[greet you|Greetings, Customer]].
+
+
+:: Cake Responsibility Revolver {"position":"1300,375","size":"100,100"}
+Sam:
+
+(align:"=><=")[I know you're new, but I'm thought I'd make a joke about birthday cake, soooooooo................"]
+
+
+
+[[Rethink statement|Cake Responsibility]]
+[[Respond to current statement|Cake Responsibility Ribbing]]
+
+
+:: Cake Responsibility Ribbing {"position":"1425,375","size":"100,100"}
+"Good ribbing, Sam."
+
+Sam give you a confused, somewhat concerned as you walk toward your [[desk|Chilling at Desk]]
+
+
+:: Car Trouble {"position":"1225,875","size":"100,100"}
+Paul:
+
+(align:"=><=")["''My car broke down.''"]
+
+
+
+Probably not ribbing me...
+Probably not sarcasm...
+[[Use lie laser|Car Trouble Laser]]
+[[Respond to current statement|Car Trouble Normal]]
+
+
+:: Car Trouble Laser {"position":"1150,750","size":"100,100"}
+Paul:
+
+(align:"=><=")["I'm lazy."]
+
+
+
+[[Rethink statement|Car Trouble]]
+[[Respond to current statement|Car Trouble Lie]]
+
+
+:: Car Trouble Lie {"position":"1275,750","size":"100,100"}
+"Wait a second, I remember you. You showed up at orientation with a new Ferrari. There's no way it broke down unless you ran into a boulder"
+
+You can almost hear the sweat dripping from Paul's forehead.
+
+Paul: "...Alright, you got me! I'm staying home to watch the new season of 'FreezeFlip'. Just don't tell the boss that, please."
+
+[["OK"|Paul Happy]]
+
+
+:: Car Trouble Normal {"position":"1100,875","size":"100,100"}
+"Alright, sounds good."
+
+As Paul hangs up the phone, you hear him giggle...
+
+[[Wipe butt|Bathroom Hallway]]
+
+
+:: Chilling at Desk {"position":"1675,550","size":"100,100"}
+As soon as the clock strikes 9AM, the intercom calls you to the [[boss's office|Boss Office]].
+
+
+:: Enter {"position":"850,625","size":"100,100"}
+Entering Word Co., you see (link-reveal:"words ")[(text-colour:lime)[("Gobsmacked" and "Cheeky" are even up, the best words)]] and (link-reveal:"phrases ")[(text-colour:lime)[(Alligators are seen latering around the front desk)]] of all kinds. 
+
+Before the words overwhelm you, you're greeted by (text-colour:grey)[Barry], the experienced co-worker you were assigned to today for your first day.
+
+(text-colour:grey)[Barry]: "How's it going, //Newbie//?"
+
+
+[["Hello."|Hello]]
+[["//Newbie//?"|Newbie]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Exposed {"position":"1525,750","size":"100,100"}
+Boss: "Well, after some investigation into your interview, we found that Einstein didn't make any time machine; that was Steven Hawking."
+
+
+
+[[Uh...|Thinking]]
+[[Oh, yeah, I meant him|Thinking]]
+
+
+:: Good One, Barry {"position":"1350,1000","size":"100,100"}
+(text-colour:grey)[Barry]: "I'm glad you're familiar with (text-style:"underline")[[[sarcasm|Sarcasm]]] already."
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Greetings, Customer {"position":"1375,500","size":"100,100"}
+Cashier:
+
+(align:"=><=")[Greetings, valued customer!]
+
+
+
+Probably not ribbing me...
+[[Use sarcasm scanner|Greetings, Customer Scanner]]
+Probably not lying...
+[[Respond to current statement|Greetings, Customer Normal]]
+
+
+:: Greetings, Customer Normal {"position":"1500,500","size":"100,100"}
+"Hello!"
+
+You grab a vanilla-frosted cake, covered with letter-shaped sprinkled, and return back to your office [[desk|Chilling at Desk]].
+
+
+:: Greetings, Customer Sarcasm {"position":"1425,625","size":"100,100"}
+"The fuck you just say!?!"
+
+You knock out the Cashier with a stale baguet and swipe the nearest (link-reveal:"cake")[(text-colour:lime)[ (titled "Happy 5th Divorciversary!")]] before speeding back to your office [[desk|Chilling at Desk]].
+
+(set: $Ally to it + 1)
+
+
+:: Greetings, Customer Scanner {"position":"1300,625","size":"100,100"}
+Cashier:
+
+(align:"=><=")[Hey, Dumbass.]
+
+
+
+[[Rethink statement|Greetings, Customer]]
+[[Respond to current statement|Greetings, Customer Sarcasm]]
+
+
+:: Hello {"position":"975,750","size":"100,100"}
+(text-colour:grey)[Barry]: "It's nice to meet someone who gets [[//ribbing//|Ribbing]] around here, for once!"
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Intro {"position":"900,375","size":"100,100"}
+As you stand at the door of your new nine-to-five, you reminisce about your [[journey|Journey]] to this point.
+
+(set: $Allies to 0)
+(set: $Assaults to 0)
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: JK {"position":"1725,1000","size":"100,100"}
+Barry: "I'm just joking with you, Newbie. Nothing funnier than a funny [[''lie''|Lie]]."
+
+
+:: John {"position":"850,1125","size":"100,100"}
+"Hello pal, name's (text-colour:cyan)[John]. Nice to meet ya."
+
+[["Hey, John"|Loud Sound]]
+[["Same here, John"|Loud Sound]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Journey {"position":"1025,375","size":"100,100"}
+As you stand at the door of your new nine-to-five, you reminisce about your journey to this point.
+
+With your Parents being rocks in terms of conversation, and your classmates being more interested in "ZoomZam" and "FreezeFlip" instead of your niche interested in "CaneDoodle" throughout the years, your communication skills are...[[lacking|Lacking]]...to say the least.
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Lacking {"position":"975,500","size":"100,100"}
+As you stand at the door of your new nine-to-five, you reminisce about your journey to this point.
+
+With your Parents being rocks in terms of conversation, and your classmates being more interested in "ZoomZam" and "FreezeFlip" instead of your niche interested in "CaneDoodle" throughout the years, your communication skils are, lacking, to say the least.
+
+Of course, Word Co. has always been your dream since your teenage years, so by application time, you took some...creative liberties with your resume.
+
+"Yeah, I gave MLK Jr. his "I Have a Dream Speech"...How'd I do that when I'm in my twenties now? Well, I convinced Albert Einstein to make me a [[time machine|Time Machine]]."
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Lie {"position":"1725,875","size":"100,100"}
+You remember the ''lie laser'' you received during orientation, created to zap away any falsehoods from statements.
+
+
+
+(align:"=><=")[(text-colour:navy)[[YOU ACQUIRED THE LIE LASER]]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Loud Sound {"position":"975,1125","size":"100,100"}
+(text-colour:cyan)[John]:
+
+(align:"=><=")["That loud sound from the basement's still going. You mind killing whatever demon keeps howling down there?"]
+
+
+
+[[Use ribbing revolver|Loud Sound with Revolver]]
+[[Respond to current statement|Lound Sound Normal]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Loud Sound Ribbing {"position":"1100,1000","size":"100,100"}
+"Yeah, its pretty annoying"
+
+John smirks and slides back into his [[desk|Your Desk]].
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Loud Sound with Revolver {"position":"975,1000","size":"100,100"}
+(text-colour:cyan)[John]:
+
+(align:"=><=")["That loud sound from the basement's still going. Pretty annoying, huh?"]
+
+
+
+[[Rethink statement|Loud Sound]]
+[[Respond to current statement|Loud Sound Ribbing]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Lound Sound Normal {"position":"1100,1125","size":"100,100"}
+"Sure thing, I'm on it!"
+
+You grab your rifle revolver, set it to "regular mode" for...well...(text-colour:red)[killing], and slay the demon that's been howling through the company's ventiliation system for months.
+
+John gives you a thumbs-up when you place the demon's severed head on his desk, right before you head towards [[your desk|Your Desk]].
+
+(set: $Allies to it + 1)
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Mentor's lie {"position":"1975,875","size":"100,100"}
+Barry: "Hey, ''everybody knows that you're working undercover for Phrase Inc. The cops are are coming right now''."
+
+
+
+[["What the fu-"|JK]]
+[["Very funny, Barry"|Very Funny, Berry]]
+
+
+:: Mentor's sarcasm {"position":"1225,1125","size":"100,100"}
+(text-colour:grey)[Barry]: "Hey again, (text-style:"underline")[I see you've already decorated your office]."
+
+
+[["Uh, sure..."|Sure...]]
+[["Good one, Barry"|Good One, Barry]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Newbie {"position":"850,750","size":"100,100"}
+(text-colour:grey)[Barry]: "Relax, I'm just [[//ribbing//|Ribbing]] you! Got to have fun on the first day, at least."
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Office hallway {"position":"850,1000","size":"100,100"}
+Arriving at the office hallways, you spot numerous portraits, with employees posing alongside their favorite (link-reveal:"words")[(text-colour:lime)[ (Someone even got a picture with the legendary "The", themself!)]].
+
+Your admiration is cut short when another [[co-worker|John]] walks towards you.
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Paul Happy {"position":"1175,625","size":"100,100"}
+Paul: "Thanks, I owe you one."
+
+Paul hangs up with a relieved sigh.
+
+[[Wipe butt|Bathroom Hallway]]
+
+(set: $Ally to it + 1)
+
+
+:: Phone Call {"position":"1350,875","size":"100,100"}
+"Hey, name's Paul. I saw your number on file. [[Let the boss know I can't come to work today|Car Trouble]]..."
+
+
+:: Ribbing {"position":"850,875","size":"100,100"}
+You remember the //ribbing revolver// you received during orientation, meant to catch any hidden //ribbings// in others' words.
+
+
+
+
+(align:"=><=")[(text-colour:navy)[[YOU ACQUIRED THE RIBBING REVOLVER]]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Sarcasm {"position":"1475,1125","size":"100,100"}
+You remember the (text-style:"underline")[sarcasm scanner] you received during orientation, meant to anaylze any hints of sarcasm in people's expressions.
+
+
+
+
+(align:"=><=")[(text-colour:navy)[[YOU ACQUIRED THE SARCASM SCANNER]]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Sure... {"position":"1350,1125","size":"100,100"}
+(text-colour:grey)[Barry]: "C'mon, you act like you've never heard of (text-style:"underline")[[[sarcasm|Sarcasm]]] before."
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Thinking {"position":"1650,750","size":"100,100"}
+Boss:
+
+(align:"=><=")["(text-style:"underline")[//''You know what I'm thinking right now, right, word genius?''//]"]
+
+
+(text-colour:red)[RIP JOB]
+
+[[Restart Game|Intro]]
+
+
+:: Time Machine {"position":"850,500","size":"100,100"}
+A time machine might be useful to get you out of this shit you're in [[now|Enter]].
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: Very Funny, Berry {"position":"1850,850","size":"100,100"}
+"I guess my [[''lie''|Lie]] wasn't very convincing, huh."
+
+
+:: YOU ACQUIRED THE LIE LASER {"position":"1600,875","size":"100,100"}
+Barry: "Don't be surprise if any other co-workers use lies against you. But remember, not everything is a lie, rib, and sarcastic phrase. A phrase might just be one, or even none"
+
+Barry: "Also, you might want to hit the bathroom before work starts; it can be rough holding it in the first few days."
+
+
+[["Well noted, thanks again Barry"|Bathroom]]
+[["Duly noted"|Bathroom]]
+
+
+:: YOU ACQUIRED THE RIBBING REVOLVER {"position":"975,875","size":"100,100"}
+(text-colour:grey)[Barry]: "Well, since you're here early, feel free to talk to others around here. Maybe use that revolver if it sounds like //ribbing's// on their agenda, if you get me."
+
+(text-colour:grey)[Barry]: "Of course, not every statement is meant to joke with you; make sure to pay attention to the clues in people's speech. You definitely don't want people hating you over a simple mistake."
+
+[["Sounds good."|Office hallway]]
+[["Thanks, Barry."|Office hallway]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
+
+
+:: YOU ACQUIRED THE SARCASM SCANNER {"position":"1475,1000","size":"100,100"}
+(text-colour:grey)[Barry]: "Since we still have time before work starts, maybe grab youself some breakfast at the break room; just have that (text-style:"underline")[sarcasm scanner] ready for any groggy co-workers.
+
+
+
+[[Good point; thanks!|Break Room]]
+[[Will do, Barry|Break Room]]
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan)) 
+
+
+:: Your Desk {"position":"1225,1000","size":"100,100"}
+Your desk space is as plain as can be, lacking the rad poster that Jakes covers his walls (link-reveal:"with") [(text-colour:lime)[ (His poster of "Word VS Word: Civil Word", is a definite highlight)]].
+
+As you consider what to add to your desk, [[someone|Mentor's sarcasm]] taps you from behind.
+
+(hide:?sidebar)
+(change: "Barry", (text-colour: grey))
+(change:"John", (text-colour: cyan))
