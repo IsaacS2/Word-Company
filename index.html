@@ -9,53 +9,117 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Word Co..</tw-noscript></noscript></tw-story>
-<tw-storydata name="Word Co." startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="87FB9EBB-C4BF-4CF7-ACEF-ACA655FCA22B" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="900,375" size="100,100">As you stand at the door of your new nine-to-five, you reminisce about your [[journey|Journey]] to this point.
+<tw-storydata name="Word Co." startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="87FB9EBB-C4BF-4CF7-ACEF-ACA655FCA22B" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*
+tw-story[tags~="Bathroom"] {
+  background-image:url("https://github.com/IsaacS2/Word-Company/blob/main/Bathroom.jpg?raw=true");
+  background-size:cover;
+}
+
+tw-story[tags~="Desk"] {
+  background-image:url("https://github.com/IsaacS2/Word-Company/blob/main/FrontDesk.jpg?raw=true");
+  background-size:cover;
+}
+
+tw-story[tags~="Bakery"] {
+  background-image:url("https://github.com/IsaacS2/Word-Company/blob/main/Bakery.jpg?raw=true");
+  background-size:cover;
+}
+
+tw-story[tags~="Front"] {
+  background-image:url("https://github.com/IsaacS2/Word-Company/blob/main/FrontDesk.jpg?raw=true");
+  background-size:cover;
+}
+
+tw-story[tags~="Word-Co."] {
+  background-image:url("https://github.com/IsaacS2/Word-Company/blob/main/WordCo.jpg?raw=true");
+  background-size:cover;
+}
+
+tw-story[tags~="Kitchen"] {
+  background-image:url("https://github.com/IsaacS2/Word-Company/blob/main/BreakRoom.jpg?raw=true");
+  background-size:cover;
+}
+
+tw-story[tags~="Boss"] {
+  background-image:url("https://github.com/IsaacS2/Word-Company/blob/main/Boss.jpg?raw=true");
+  background-size:cover;
+}
+*/</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="900,375" size="100,100">As you stand at the door of your new nine-to-five, you reminisce about your [[journey|Journey]] to this point.
 
 (set: $Allies to 0)
 (set: $Assaults to 0)
-(hide:?sidebar)
-(change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="2" name="Journey" tags="" position="1025,375" size="100,100">As you stand at the door of your new nine-to-five, you reminisce about your journey to this point.
-
-With your Parents being rocks in terms of conversation, and your classmates being more interested in &quot;ZoomZam&quot; and &quot;FreezeFlip&quot; instead of your niche interested in &quot;CaneDoodle&quot; throughout the years, your communication skills are...[[lacking|Lacking]]...to say the least.
-
-(hide:?sidebar)
-(change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="3" name="Lacking" tags="" position="975,500" size="100,100">As you stand at the door of your new nine-to-five, you reminisce about your journey to this point.
-
-With your Parents being rocks in terms of conversation, and your classmates being more interested in &quot;ZoomZam&quot; and &quot;FreezeFlip&quot; instead of your niche interested in &quot;CaneDoodle&quot; throughout the years, your communication skils are, lacking, to say the least.
-
-Of course, Word Co. has always been your dream since your teenage years, so by application time, you took some...creative liberties with your resume.
-
-&quot;Yeah, I gave MLK Jr. his &quot;I Have a Dream Speech&quot;...How&#39;d I do that when I&#39;m in my twenties now? Well, I convinced Albert Einstein to make me a [[time machine|Time Machine]].&quot;
+(set: $John to false)
+(set: $Alex to false)
+(set: $Paul to false)
+(set: $Jessie to false)
+(set: $Barry to false)
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="4" name="Time Machine" tags="" position="850,500" size="100,100">A time machine might be useful to get you out of this shit you&#39;re in [[now|Enter]].
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour: orange))</tw-passagedata><tw-passagedata pid="2" name="Journey" tags="" position="1025,375" size="100,100">With your Parents being rocks in terms of conversation, and your classmates being more interested in &quot;ZoomZam&quot; and &quot;FreezeFlip&quot; instead of your niche interested in &quot;CaneDoodle&quot; throughout the years, your communication skills are...[[lacking|Lacking]]...to say the least.
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="5" name="Enter" tags="" position="850,625" size="100,100">Entering Word Co., you see (link-reveal:&quot;words &quot;)[(text-colour:lime)[(&quot;Gobsmacked&quot; and &quot;Cheeky&quot; are even up, the best words)]] and (link-reveal:&quot;phrases &quot;)[(text-colour:lime)[(Alligators are seen latering around the front desk)]] of all kinds. 
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="3" name="Lacking" tags="Word-Co." position="975,500" size="100,100">Of course, Word Co. has always been your dream since you started high school, so by application time, you took some...creative liberties with your resume.
 
-Before the words overwhelm you, you&#39;re greeted by (text-colour:grey)[Barry], the experienced co-worker you were assigned to today for your first day.
+&quot;Yeah, I wrote MLK Jr. and Abraham Lincoln their speeches...How&#39;d I do that when I&#39;m in my twenties now? Well, I convinced Albert Einstein to make me a [[time machine|Time Machine]].&quot;
 
-(text-colour:grey)[Barry]: &quot;How&#39;s it going, //Newbie//?&quot;
+&lt;img src=&quot;https://github.com/IsaacS2/Word-Company/blob/main/WordCo.jpg?raw=true&quot;
+  alt=&quot;A Sketch of a Large Building&quot; width=&quot;500&quot;
+/&gt;
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="4" name="Time Machine" tags="Word-Co." position="850,500" size="100,100">A time machine might be useful to get you out of this shit you&#39;re in [[now|Enter]].
+
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))
+</tw-passagedata><tw-passagedata pid="5" name="Enter" tags="Front" position="850,625" size="100,100">Entering Word Co., you see (link-reveal:&quot;words &quot;)[(text-colour:lime)[(&quot;Gobsmacked&quot; and &quot;Cheeky&quot; are even up, the best words)]] and (link-reveal:&quot;phrases &quot;)[(text-colour:lime)[(Alligators are seen latering around the front desk)]] of all kinds. 
+
+Before the words overwhelm you, you&#39;re greeted by Barry, your advisor for the day..
+
+Barry: &quot;How&#39;s it going, //Newbie//?&quot;
 
 
 [[&quot;Hello.&quot;|Hello]]
 [[&quot;//Newbie//?&quot;|Newbie]]
+&lt;img src=&quot;https://github.com/IsaacS2/Word-Company/blob/main/FrontDesk.jpg?raw=true&quot;
+  alt=&quot;The Front Desk of an Office&quot; width=&quot;500&quot;
+/&gt;
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="6" name="Newbie" tags="Front" position="850,750" size="100,100">(text-colour:grey)[Barry]: &quot;Relax, I&#39;m just [[//ribbing//|Ribbing]] you! Got to have fun on the first day, at least.&quot;
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="6" name="Newbie" tags="" position="850,750" size="100,100">(text-colour:grey)[Barry]: &quot;Relax, I&#39;m just [[//ribbing//|Ribbing]] you! Got to have fun on the first day, at least.&quot;
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="7" name="Hello" tags="Front" position="975,750" size="100,100">(text-colour:grey)[Barry]: &quot;It&#39;s nice to meet someone who gets [[//ribbing//|Ribbing]] around here, for once!&quot;
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="7" name="Hello" tags="" position="975,750" size="100,100">(text-colour:grey)[Barry]: &quot;It&#39;s nice to meet someone who gets [[//ribbing//|Ribbing]] around here, for once!&quot;
-
-(hide:?sidebar)
-(change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="8" name="Ribbing" tags="" position="850,875" size="100,100">You remember the //ribbing revolver// you received during orientation, meant to catch any hidden //ribbings// in others&#39; words.
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="8" name="Ribbing" tags="Front" position="850,875" size="100,100">You remember the //ribbing revolver// you received during orientation, meant to catch any hidden //ribbings// in others&#39; words.
 
 
 
@@ -64,29 +128,41 @@ Before the words overwhelm you, you&#39;re greeted by (text-colour:grey)[Barry],
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="9" name="YOU ACQUIRED THE RIBBING REVOLVER" tags="" position="975,875" size="100,100">(text-colour:grey)[Barry]: &quot;Well, since you&#39;re here early, feel free to talk to others around here. Maybe use that revolver if it sounds like //ribbing&#39;s// on their agenda, if you get me.&quot;
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="9" name="YOU ACQUIRED THE RIBBING REVOLVER" tags="Front" position="975,875" size="100,100">(text-colour:grey)[Barry]: &quot;Well, since you&#39;re here early, feel free to talk to others around here. Maybe use that revolver  to anaylze others&#39; speech if it sounds like //ribbing&#39;s// on their agenda.&quot;
 
-(text-colour:grey)[Barry]: &quot;Of course, not every statement is meant to joke with you; make sure to pay attention to the clues in people&#39;s speech. You definitely don&#39;t want people hating you over a simple mistake.&quot;
+(text-colour:grey)[Barry]: &quot;Of course, not every statement is meant to joke with you; make sure to pay attention to the (text-style:&quot;underline&quot;)[//&#39;&#39;style&#39;&#39;//] of people&#39;s speech. You definitely don&#39;t want people hating you over a simple mistake. Try to make some friends&quot;
 
 [[&quot;Sounds good.&quot;|Office hallway]]
 [[&quot;Thanks, Barry.&quot;|Office hallway]]
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="10" name="Office hallway" tags="" position="850,1000" size="100,100">Arriving at the office hallways, you spot numerous portraits, with employees posing alongside their favorite (link-reveal:&quot;words&quot;)[(text-colour:lime)[ (Someone even got a picture with the legendary &quot;The&quot;, themself!)]].
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="10" name="Office hallway" tags="Front" position="850,1000" size="100,100">Arriving at the office hallways, you spot numerous portraits, with employees posing alongside their favorite (link-reveal:&quot;words&quot;)[(text-colour:lime)[ (Someone even got a picture with the legendary &quot;The&quot;, themself!)]].
 
 Your admiration is cut short when another [[co-worker|John]] walks towards you.
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="11" name="John" tags="" position="850,1125" size="100,100">&quot;Hello pal, name&#39;s (text-colour:cyan)[John]. Nice to meet ya.&quot;
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="11" name="John" tags="Front" position="850,1125" size="100,100">&quot;Hello pal, name&#39;s (text-colour:cyan)[John]. Nice to meet ya.&quot;
 
 [[&quot;Hey, John&quot;|Loud Sound]]
 [[&quot;Same here, John&quot;|Loud Sound]]
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="12" name="Loud Sound" tags="" position="975,1125" size="100,100">(text-colour:cyan)[John]:
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="12" name="Loud Sound" tags="Front" position="975,1125" size="100,100">(text-colour:cyan)[John]:
 
 (align:&quot;=&gt;&lt;=&quot;)[&quot;That loud sound from the basement&#39;s still going. You mind killing whatever demon keeps howling down there?&quot;]
 
@@ -97,39 +173,56 @@ Your admiration is cut short when another [[co-worker|John]] walks towards you.
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="13" name="Loud Sound with Revolver" tags="" position="975,1000" size="100,100">(text-colour:cyan)[John]:
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="13" name="Loud Sound with Revolver" tags="Front" position="975,1000" size="100,100">(text-colour:cyan)[John]:
 
 (align:&quot;=&gt;&lt;=&quot;)[&quot;That loud sound from the basement&#39;s still going. Pretty annoying, huh?&quot;]
 
 
 
-[[Rethink statement|Loud Sound]]
+[[Rethink statement (go back)|Loud Sound]]
 [[Respond to current statement|Loud Sound Ribbing]]
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="14" name="Lound Sound Normal" tags="" position="1100,1125" size="100,100">&quot;Sure thing, I&#39;m on it!&quot;
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="14" name="Lound Sound Normal" tags="Front" position="1100,1125" size="100,100">&quot;Sure thing, I&#39;m on it!&quot;
 
-You grab your rifle revolver, set it to &quot;regular mode&quot; for...well...(text-colour:red)[killing], and slay the demon that&#39;s been howling through the company&#39;s ventiliation system for months.
+You grab your ribbing revolver, set it to &quot;regular mode&quot; for...well...(text-colour:red)[killing], and slay the demon that&#39;s been howling through the company&#39;s ventiliation system for months.
 
 John gives you a thumbs-up when you place the demon&#39;s severed head on his desk, right before you head towards [[your desk|Your Desk]].
 
+(set: $John to true)
 (set: $Allies to it + 1)
-(hide:?sidebar)
-(change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="15" name="Loud Sound Ribbing" tags="" position="1100,1000" size="100,100">&quot;Yeah, its pretty annoying&quot;
-
-John smirks and slides back into his [[desk|Your Desk]].
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="16" name="Your Desk" tags="" position="1225,1000" size="100,100">Your desk space is as plain as can be, lacking the rad poster that Jakes covers his walls (link-reveal:&quot;with&quot;) [(text-colour:lime)[ (His poster of &quot;Word VS Word: Civil Word&quot;, is a definite highlight)]].
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="15" name="Loud Sound Ribbing" tags="Front" position="1100,1000" size="100,100">&quot;Yeah, it&#39;s pretty annoying&quot;
+
+John smirks as you head to your [[desk|Your Desk]].
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="16" name="Your Desk" tags="Desk" position="1225,1000" size="100,100">Your desk space is as plain as can be, lacking the rad poster that Jake covers his walls (link-reveal:&quot;with&quot;) [(text-colour:lime)[ (His poster of &quot;Word VS Word: Civil Word&quot;, is a definite highlight)]].
 
 As you consider what to add to your desk, [[someone|Mentor&#39;s sarcasm]] taps you from behind.
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="17" name="Mentor&#39;s sarcasm" tags="" position="1225,1125" size="100,100">(text-colour:grey)[Barry]: &quot;Hey again, (text-style:&quot;underline&quot;)[I see you&#39;ve already decorated your office].&quot;
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="17" name="Mentor&#39;s sarcasm" tags="Desk" position="1225,1125" size="100,100">(text-colour:grey)[Barry]: &quot;Hey again, (text-style:&quot;underline&quot;)[I see you&#39;ve already decorated your office].&quot;
 
 
 [[&quot;Uh, sure...&quot;|Sure...]]
@@ -137,15 +230,24 @@ As you consider what to add to your desk, [[someone|Mentor&#39;s sarcasm]] taps 
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="18" name="Good One, Barry" tags="" position="1350,1000" size="100,100">(text-colour:grey)[Barry]: &quot;I&#39;m glad you&#39;re familiar with (text-style:&quot;underline&quot;)[[[sarcasm|Sarcasm]]] already.&quot;
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="18" name="Good One, Barry" tags="Desk" position="1350,1000" size="100,100">(text-colour:grey)[Barry]: &quot;I&#39;m glad you&#39;re familiar with (text-style:&quot;underline&quot;)[[[sarcasm|Sarcasm]]] already.&quot;
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="19" name="Sure..." tags="" position="1350,1125" size="100,100">(text-colour:grey)[Barry]: &quot;C&#39;mon, you act like you&#39;ve never heard of (text-style:&quot;underline&quot;)[[[sarcasm|Sarcasm]]] before.&quot;
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="19" name="Sure..." tags="Desk" position="1350,1125" size="100,100">(text-colour:grey)[Barry]: &quot;C&#39;mon, you act like you&#39;ve never heard of (text-style:&quot;underline&quot;)[[[sarcasm|Sarcasm]]] before.&quot;
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="20" name="Sarcasm" tags="" position="1475,1125" size="100,100">You remember the (text-style:&quot;underline&quot;)[sarcasm scanner] you received during orientation, meant to anaylze any hints of sarcasm in people&#39;s expressions.
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="20" name="Sarcasm" tags="Desk" position="1475,1125" size="100,100">You remember the (text-style:&quot;underline&quot;)[sarcasm scanner] you received during orientation, meant to anaylze any hints of (text-style:&quot;underline&quot;)[sarcasm] in people&#39;s expressions.
 
 
 
@@ -154,7 +256,10 @@ As you consider what to add to your desk, [[someone|Mentor&#39;s sarcasm]] taps 
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="21" name="YOU ACQUIRED THE SARCASM SCANNER" tags="" position="1475,1000" size="100,100">(text-colour:grey)[Barry]: &quot;Since we still have time before work starts, maybe grab youself some breakfast at the break room; just have that (text-style:&quot;underline&quot;)[sarcasm scanner] ready for any groggy co-workers.
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="21" name="YOU ACQUIRED THE SARCASM SCANNER" tags="Desk" position="1475,1000" size="100,100">(text-colour:grey)[Barry]: &quot;Since we still have time before work starts, maybe grab youself some breakfast at the break room; just have that (text-style:&quot;underline&quot;)[sarcasm scanner] ready for any groggy co-workers.
 
 
 
@@ -163,41 +268,118 @@ As you consider what to add to your desk, [[someone|Mentor&#39;s sarcasm]] taps 
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan)) </tw-passagedata><tw-passagedata pid="22" name="Break Room" tags="" position="1600,1000" size="100,100">The break room emanates the smell of burnt tortillas and crispy toast.
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="22" name="Break Room" tags="Kitchen" position="1600,1000" size="100,100">The break room emanates the smell of burnt tortillas and crispy toast.
 
-Trotting past the counter, you see yogurt lid plastered on the door.
+Trotting past the counter, you see a yogurt lid plastered on the floor.
 
 [[Pick up wrapper|Alex]]
 
+&lt;img src=&quot;https://github.com/IsaacS2/Word-Company/blob/main/BreakRoom.jpg?raw=true&quot;
+  alt=&quot;An Office Breakroom with a fridge and toaster&quot; width=&quot;500&quot;/&gt;
+
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="23" name="Alex" tags="" position="1600,1125" size="100,100">As you pick up the lid, you see another co-worker enjoying a recently opened yogurt. 
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="23" name="Alex" tags="Kitchen" position="1600,1125" size="100,100">As you pick up the lid, you see another co-worker enjoying a recently opened yogurt. 
 
-Her name tag says [[&quot;Alex&quot;|A Hero]].</tw-passagedata><tw-passagedata pid="24" name="A Hero" tags="" position="1725,1125" size="100,100">Alex:
+Her name tag says [[&quot;Alex&quot;|A Hero]].
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="24" name="A Hero" tags="Kitchen" position="1725,1125" size="100,100">Alex:
 
 (align:&quot;=&gt;&lt;=&quot;)[&quot;Wow, (text-style:&quot;underline&quot;)[you&#39;re really being a hero] cleaning up that yogurt lid.&quot;]
 
+
+
+
 Probably not ribbing me...
 [[Use sarcasm scanner|A Hero with Scanner]]
-[[Respond to current statement|A Hero Normal]]</tw-passagedata><tw-passagedata pid="25" name="A Hero with Scanner" tags="" position="1850,1125" size="100,100">Alex:
+[[Respond to current statement|A Hero Normal]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="25" name="A Hero with Scanner" tags="Kitchen" position="1850,1125" size="100,100">Alex:
 
 (align:&quot;=&gt;&lt;=&quot;)[&quot;Wow, no one cares that you&#39;re cleaning up that yogurt lid.&quot;]
 
-[[Rethink statement|A Hero]]
-[[Respond to current statement|A Hero Sarcasm]]</tw-passagedata><tw-passagedata pid="26" name="A Hero Normal" tags="" position="1850,1000" size="100,100">With your cover blown, you remove your suit an reveal yourself to be &quot;Litter Languisher&quot;, enemy of litter around the world.
+[[Rethink statement (go back)|A Hero]]
+[[Respond to current statement|A Hero Sarcasm]]
 
-However, Alex is unimpressed with your grass green underwear costume and continues eating her yogurt, dumping her container on the floor before [[leaving|Break Room Hallway]]...</tw-passagedata><tw-passagedata pid="27" name="A Hero Sarcasm" tags="" position="1975,1125" size="100,100">&quot;Yeah, well maybe you could be my sidekick if you cleaned up your shit.&quot;
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="26" name="A Hero Normal" tags="Kitchen" position="1850,1000" size="100,100">With your cover blown, you remove your suit and reveal yourself to be &quot;Litter Languisher&quot;, enemy of litter around the world.
 
-Alex slightly smiles from your slightly embarassing, but confident, retort. She tosses her yogurt container in the garbage before leaving the [[break room|Break Room Hallway]].
+However, Alex is unimpressed with your grass-green underwear costume and continues eating her yogurt, dumping her container on the floor before [[leaving|Break Room Hallway]]...
 
-(set: $Ally to it + 1)</tw-passagedata><tw-passagedata pid="28" name="Break Room Hallway" tags="" position="1975,1000" size="100,100">Leaving the breakroom as well, you hear other co-workers chatting about which words would win in a (link-reveal:&quot;fight&quot;)[(text-colour:lime)[ (you notice John arguing with Alex about how &quot;whom&quot; is way more powerful than &quot;who&quot;)]].
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="27" name="A Hero Sarcasm" tags="Kitchen" position="1975,1125" size="100,100">&quot;Yeah, well maybe you could be my sidekick if you cleaned up your shit.&quot;
 
-You easedropping is interrupted by [[Barry|Mentor&#39;s lie]].</tw-passagedata><tw-passagedata pid="29" name="Mentor&#39;s lie" tags="" position="1975,875" size="100,100">Barry: &quot;Hey, &#39;&#39;everybody knows that you&#39;re working undercover for Phrase Inc. The cops are are coming right now&#39;&#39;.&quot;
+Alex smiles from your slightly embarassing, but confident, retort. She tosses her yogurt container in the garbage before leaving the [[break room|Break Room Hallway]].
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))
+
+(set: $Alex to true)
+(set: $Allies to it + 1)
+</tw-passagedata><tw-passagedata pid="28" name="Break Room Hallway" tags="Front" position="1975,1000" size="100,100">Leaving the breakroom as well, you hear other co-workers chatting about which words would win in a (link-reveal:&quot;fight&quot;)[(text-colour:lime)[ (you notice John arguing with Alex about how &quot;whom&quot; is way more powerful than &quot;who&quot;)]].
+
+You easedropping is interrupted by [[Barry|Mentor&#39;s lie]].
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="29" name="Mentor&#39;s lie" tags="Front" position="1975,875" size="100,100">Barry: &quot;Hey, &#39;&#39;everybody knows that you&#39;re working undercover for Phrase Inc. The cops are are coming right now&#39;&#39;.&quot;
 
 
 
 [[&quot;What the fu-&quot;|JK]]
-[[&quot;Very funny, Barry&quot;|Very Funny, Berry]]</tw-passagedata><tw-passagedata pid="30" name="JK" tags="" position="1725,1000" size="100,100">Barry: &quot;I&#39;m just joking with you, Newbie. Nothing funnier than a funny [[&#39;&#39;lie&#39;&#39;|Lie]].&quot;</tw-passagedata><tw-passagedata pid="31" name="Very Funny, Berry" tags="" position="1850,850" size="100,100">&quot;I guess my [[&#39;&#39;lie&#39;&#39;|Lie]] wasn&#39;t very convincing, huh.&quot;</tw-passagedata><tw-passagedata pid="32" name="Lie" tags="" position="1725,875" size="100,100">You remember the &#39;&#39;lie laser&#39;&#39; you received during orientation, created to zap away any falsehoods from statements.
+[[&quot;Very funny, Barry&quot;|Very Funny, Berry]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="30" name="JK" tags="Front" position="1725,1000" size="100,100">Barry: &quot;I&#39;m just joking with you, Newbie. Nothing funnier than a funny [[&#39;&#39;lie&#39;&#39;|Lie]].&quot;
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="31" name="Very Funny, Berry" tags="Front" position="1850,850" size="100,100">&quot;I guess my [[&#39;&#39;lie&#39;&#39;|Lie]] wasn&#39;t very convincing, huh?&quot;
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="32" name="Lie" tags="Front" position="1725,875" size="100,100">You remember the &#39;&#39;lie laser&#39;&#39; you received during orientation, created to zap away any falsehoods from statements.
 
 
 
@@ -205,17 +387,44 @@ You easedropping is interrupted by [[Barry|Mentor&#39;s lie]].</tw-passagedata><
 
 (hide:?sidebar)
 (change: &quot;Barry&quot;, (text-colour: grey))
-(change:&quot;John&quot;, (text-colour: cyan))</tw-passagedata><tw-passagedata pid="33" name="YOU ACQUIRED THE LIE LASER" tags="" position="1600,875" size="100,100">Barry: &quot;Don&#39;t be surprise if any other co-workers use lies against you. But remember, not everything is a lie, rib, and sarcastic phrase. A phrase might just be one, or even none&quot;
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="33" name="YOU ACQUIRED THE LIE LASER" tags="Front" position="1600,875" size="100,100">Barry: &quot;Don&#39;t be surprise if other co-workers use lies against you. But remember, not everything is a lie, rib, and sarcastic phrase. A phrase might just be one, or even none&quot;
 
 Barry: &quot;Also, you might want to hit the bathroom before work starts; it can be rough holding it in the first few days.&quot;
 
 
 [[&quot;Well noted, thanks again Barry&quot;|Bathroom]]
-[[&quot;Duly noted&quot;|Bathroom]]</tw-passagedata><tw-passagedata pid="34" name="Bathroom" tags="" position="1475,875" size="100,100">You enter the bathroom. The interior is rather clean, although it may be cause barely anyone uses it since bathroom breaks eat away at payed hours.
+[[&quot;Duly noted&quot;|Bathroom]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="34" name="Bathroom" tags="Bathroom" position="1475,875" size="100,100">You enter the bathroom. The interior is rather clean, although that may be because barely anyone uses the can here, since bathroom breaks eat away at your payed hours.
 
 While on the toliet, you get a phone call from a familiar, yet strange number.
 
-[[Answer phone|Phone Call]]</tw-passagedata><tw-passagedata pid="35" name="Phone Call" tags="" position="1350,875" size="100,100">&quot;Hey, name&#39;s Paul. I saw your number on file. [[Let the boss know I can&#39;t come to work today|Car Trouble]]...&quot;</tw-passagedata><tw-passagedata pid="36" name="Car Trouble" tags="" position="1225,875" size="100,100">Paul:
+[[Answer phone|Phone Call]]
+
+&lt;img src=&quot;https://github.com/IsaacS2/Word-Company/blob/main/Bathroom.jpg?raw=true&quot;
+  alt=&quot;A Bathroom with a Toilet and Sink&quot; width=&quot;500&quot;/&gt;
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="35" name="Phone Call" tags="Bathroom" position="1350,875" size="100,100">&quot;Hey, name&#39;s Paul. I saw your number on file. [[Let the boss know I can&#39;t come to work today|Car Trouble]]...&quot;
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="36" name="Car Trouble" tags="Bathroom" position="1225,875" size="100,100">Paul:
 
 (align:&quot;=&gt;&lt;=&quot;)[&quot;&#39;&#39;My car broke down.&#39;&#39;&quot;]
 
@@ -224,32 +433,75 @@ While on the toliet, you get a phone call from a familiar, yet strange number.
 Probably not ribbing me...
 Probably not sarcasm...
 [[Use lie laser|Car Trouble Laser]]
-[[Respond to current statement|Car Trouble Normal]]</tw-passagedata><tw-passagedata pid="37" name="Car Trouble Normal" tags="" position="1100,875" size="100,100">&quot;Alright, sounds good.&quot;
+[[Respond to current statement|Car Trouble Normal]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="37" name="Car Trouble Normal" tags="Bathroom" position="1100,875" size="100,100">&quot;Alright, sounds good.&quot;
 
 As Paul hangs up the phone, you hear him giggle...
 
-[[Wipe butt|Bathroom Hallway]]</tw-passagedata><tw-passagedata pid="38" name="Car Trouble Laser" tags="" position="1150,750" size="100,100">Paul:
+[[Wipe butt|Bathroom Hallway]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="38" name="Car Trouble Laser" tags="Bathroom" position="1150,750" size="100,100">Paul:
 
 (align:&quot;=&gt;&lt;=&quot;)[&quot;I&#39;m lazy.&quot;]
 
 
 
-[[Rethink statement|Car Trouble]]
-[[Respond to current statement|Car Trouble Lie]]</tw-passagedata><tw-passagedata pid="39" name="Car Trouble Lie" tags="" position="1275,750" size="100,100">&quot;Wait a second, I remember you. You showed up at orientation with a new Ferrari. There&#39;s no way it broke down unless you ran into a boulder&quot;
+[[Rethink statement (go back)|Car Trouble]]
+[[Respond to current statement|Car Trouble Lie]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="39" name="Car Trouble Lie" tags="Bathroom" position="1275,750" size="100,100">&quot;Wait a second, I remember you. You showed up at orientation with a new Ferrari. There&#39;s no way it broke down, unless you ran into a boulder&quot;
 
 You can almost hear the sweat dripping from Paul&#39;s forehead.
 
 Paul: &quot;...Alright, you got me! I&#39;m staying home to watch the new season of &#39;FreezeFlip&#39;. Just don&#39;t tell the boss that, please.&quot;
 
-[[&quot;OK&quot;|Paul Happy]]</tw-passagedata><tw-passagedata pid="40" name="Bathroom Hallway" tags="" position="1050,625" size="100,100">As you wash up and leave the bathroom, another co-worker begins walking beside you, seemingly having waited for you to come out the crapper.
+[[&quot;OK&quot;|Paul Happy]]
 
-&quot;Hi, new friend, Sam here. I was just wondering if you brought that [[cake|Cake Responsibility]] in for Jessie&#39;s birthday.</tw-passagedata><tw-passagedata pid="41" name="Paul Happy" tags="" position="1175,625" size="100,100">Paul: &quot;Thanks, I owe you one.&quot;
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="40" name="Bathroom Hallway" tags="Front" position="1050,625" size="100,100">As you wash up and leave the bathroom, another co-worker begins walking beside you, seemingly having waited for you to come out the crapper.
+
+&quot;Hi new friend; Sam here. I was just wondering if you brought that [[cake|Cake Responsibility]] in for Jessie&#39;s birthday.
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="41" name="Paul Happy" tags="Bathroom" position="1175,625" size="100,100">Paul: &quot;Thanks, I owe you one.&quot;
 
 Paul hangs up with a relieved sigh.
 
 [[Wipe butt|Bathroom Hallway]]
 
-(set: $Ally to it + 1)</tw-passagedata><tw-passagedata pid="42" name="Cake Responsibility" tags="" position="1100,500" size="100,100">Sam:
+(set: $Paul to true)
+(set: $Allies to it + 1)
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="42" name="Cake Responsibility" tags="Front" position="1100,500" size="100,100">Sam:
 
 (align:&quot;=&gt;&lt;=&quot;)[I know you&#39;re new, but &#39;&#39;you probably received an email about it, and it&#39;s your turn to bring in birthday cakes according to our cake wheel&#39;&#39;, soooooooo................&quot;]
 
@@ -258,57 +510,134 @@ Paul hangs up with a relieved sigh.
 [[Use ribbing revolver|Cake Responsibility Revolver]]
 Probably not sarcasm...
 [[Use lie laser|Cake Responsibility Laser]]
-[[Respond to current statement|Cake Responsibility Normal]]</tw-passagedata><tw-passagedata pid="43" name="Cake Responsibility Revolver" tags="" position="1300,375" size="100,100">Sam:
+[[Respond to current statement|Cake Responsibility Normal]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="43" name="Cake Responsibility Revolver" tags="Front" position="1300,375" size="100,100">Sam:
 
 (align:&quot;=&gt;&lt;=&quot;)[I know you&#39;re new, but I&#39;m thought I&#39;d make a joke about birthday cake, soooooooo................&quot;]
 
 
 
-[[Rethink statement|Cake Responsibility]]
-[[Respond to current statement|Cake Responsibility Ribbing]]</tw-passagedata><tw-passagedata pid="44" name="Cake Responsibility Laser" tags="" position="1150,375" size="100,100">Sam:
+[[Rethink statement (go back)|Cake Responsibility]]
+[[Respond to current statement|Cake Responsibility Ribbing]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="44" name="Cake Responsibility Laser" tags="Front" position="1150,375" size="100,100">Sam:
 
 (align:&quot;=&gt;&lt;=&quot;)[I know you&#39;re new, but I&#39;m making you take the responsibility of getting the cake, soooooooo................&quot;]
 
 
 
-[[Rethink statement|Cake Responsibility]]
-[[Respond to current statement|Cake Responsibility Lie]]</tw-passagedata><tw-passagedata pid="45" name="Cake Responsibility Normal" tags="" position="1250,500" size="100,100">&quot;Oh, ok. I guess I&#39;ll grab it now.&quot;
+[[Rethink statement (go back)|Cake Responsibility]]
+[[Respond to current statement|Cake Responsibility Lie]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="45" name="Cake Responsibility Normal" tags="Bakery" position="1250,500" size="100,100">&quot;Oh, ok. I guess I&#39;ll grab it now.&quot;
 
 You dash to the nearby (link-reveal:&quot;bakery &quot;)[(text-colour:lime)[(which is convienently across the street)]].
 
 Being donut season, all cakes on display have being brutally impaled to replicate the donut style.
 
-A casher appears behind the counter to [[greet you|Greetings, Customer]].</tw-passagedata><tw-passagedata pid="46" name="Greetings, Customer" tags="" position="1375,500" size="100,100">Cashier:
+A casher appears behind the counter to [[greet you|Greetings, Customer]].
+&lt;img src=&quot;https://github.com/IsaacS2/Word-Company/blob/main/Bakery.jpg?raw=true&quot;
+  alt=&quot;A Bakery with different breads and pasteries&quot; width=&quot;500&quot;/&gt;
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="46" name="Greetings, Customer" tags="Bakery" position="1375,500" size="100,100">Cashier:
 
-(align:&quot;=&gt;&lt;=&quot;)[Greetings, valued customer!]
+(align:&quot;=&gt;&lt;=&quot;)[&quot;Greetings, valued customer!&quot;]
 
 
 
 Probably not ribbing me...
 [[Use sarcasm scanner|Greetings, Customer Scanner]]
 Probably not lying...
-[[Respond to current statement|Greetings, Customer Normal]]</tw-passagedata><tw-passagedata pid="47" name="Greetings, Customer Scanner" tags="" position="1300,625" size="100,100">Cashier:
+[[Respond to current statement|Greetings, Customer Normal]]
 
-(align:&quot;=&gt;&lt;=&quot;)[Hey, Dumbass.]
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="47" name="Greetings, Customer Scanner" tags="Bakery" position="1300,625" size="100,100">Cashier:
+
+(align:&quot;=&gt;&lt;=&quot;)[&quot;Hey, Dumbass.&quot;]
 
 
 
-[[Rethink statement|Greetings, Customer]]
-[[Respond to current statement|Greetings, Customer Sarcasm]]</tw-passagedata><tw-passagedata pid="48" name="Greetings, Customer Normal" tags="" position="1500,500" size="100,100">&quot;Hello!&quot;
+[[Rethink statement (go back)|Greetings, Customer]]
+[[Respond to current statement|Greetings, Customer Sarcasm]]</tw-passagedata><tw-passagedata pid="48" name="Greetings, Customer Normal" tags="Bakery" position="1500,500" size="100,100">&quot;Hello!&quot;
 
-You grab a vanilla-frosted cake, covered with letter-shaped sprinkled, and return back to your office [[desk|Chilling at Desk]].</tw-passagedata><tw-passagedata pid="49" name="Greetings, Customer Sarcasm" tags="" position="1425,625" size="100,100">&quot;The fuck you just say!?!&quot;
+You grab a vanilla-frosted cake, covered with letter-shaped sprinkled, and return back to your office [[desk|Chilling at Desk]].
 
-You knock out the Cashier with a stale baguet and swipe the nearest (link-reveal:&quot;cake&quot;)[(text-colour:lime)[ (titled &quot;Happy 5th Divorciversary!&quot;)]] before speeding back to your office [[desk|Chilling at Desk]].
+(set: $Jessie to true)
+(set: $Allies to it + 1)
 
-(set: $Ally to it + 1)</tw-passagedata><tw-passagedata pid="50" name="Chilling at Desk" tags="" position="1675,550" size="100,100">As soon as the clock strikes 9AM, the intercom calls you to the [[boss&#39;s office|Boss Office]].</tw-passagedata><tw-passagedata pid="51" name="Cake Responsibility Lie" tags="" position="1525,250" size="100,100">&quot;Hang on, I never got an email about any of this. I think you forgot to get the cake!&quot;
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="49" name="Greetings, Customer Sarcasm" tags="Bakery" position="1425,625" size="100,100">&quot;The fuck you just say!?!&quot;
+
+You knock out the Cashier with a stale baguette and swipe the nearest (link-reveal:&quot;cake&quot;)[(text-colour:lime)[ (titled &quot;Happy 5th Divorciversary!&quot;)]] before speeding back to your office [[desk|Chilling at Desk]].
+
+(set: $Jessie to true)
+(set: $Allies to it + 1)
+(set: $Assaults to 1)
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="50" name="Chilling at Desk" tags="Desk" position="1675,475" size="100,100">As soon as the clock strikes 9AM, the intercom calls you to the [[Boss&#39;s office|Boss Office]].
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="51" name="Cake Responsibility Lie" tags="Front" position="1450,250" size="100,100">&quot;Hang on, I never got an email about any of this. I think you forgot to get the cake!&quot;
 
 Sam looks down, sighs, and then dissolves into a pristine cake.
 
-You place the cake onto the break room table before return to your [[desk|Chilling at Desk]].
+You place the cake onto the break room table before returning to your [[desk|Chilling at Desk]].
 
-(set: $Ally to it + 1)</tw-passagedata><tw-passagedata pid="52" name="Cake Responsibility Ribbing" tags="" position="1425,375" size="100,100">&quot;Good ribbing, Sam.&quot;
+(set: $Jessie to true)
+(set: $Allies to it + 1)
 
-Sam give you a confused, somewhat concerned as you walk toward your [[desk|Chilling at Desk]]</tw-passagedata><tw-passagedata pid="53" name="Boss Office" tags="" position="1400,750" size="100,100">Walking into the office, you see a tall man, smoking an exclamation point.
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="52" name="Cake Responsibility Ribbing" tags="Front" position="1425,375" size="100,100">&quot;Good ribbing, Sam.&quot;
+
+Sam give you a confused, somewhat concerned look as you walk toward your [[desk|Chilling at Desk]].
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="53" name="Boss Office" tags="Boss" position="1400,750" size="100,100">Walking into the office, you see a tall man, smoking an exclamation point.
 
 By his side is Barry, shaking nervously.
 
@@ -317,19 +646,353 @@ Boss: &quot;So you&#39;re the other new employee, the one who can apparently tim
 
 
 [[&quot;Yes, sir...&quot;|Exposed]]
-[[&quot;That&#39;s me!&quot;|Exposed]]</tw-passagedata><tw-passagedata pid="54" name="Exposed" tags="" position="1525,750" size="100,100">Boss: &quot;Well, after some investigation into your interview, we found that Einstein didn&#39;t make any time machine; that was Steven Hawking.&quot;
+[[&quot;That&#39;s me!&quot;|Exposed]]
+&lt;img src=&quot;https://github.com/IsaacS2/Word-Company/blob/main/Boss.jpg?raw=true&quot;
+  alt=&quot;A Man sitting in front of a desk&quot; width=&quot;500&quot;/&gt;
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="54" name="Exposed" tags="Boss" position="1525,750" size="100,100">Boss: &quot;Well, after some investigation into your interview, we found that Einstein didn&#39;t make any time machine; that was Steven Hawking.&quot;
 
 
 
 [[Uh...|Thinking]]
-[[Oh, yeah, I meant him|Thinking]]</tw-passagedata><tw-passagedata pid="55" name="Thinking" tags="" position="1650,750" size="100,100">Boss:
+[[Oh, yeah, I meant him|Thinking]]
 
-(align:&quot;=&gt;&lt;=&quot;)[&quot;(text-style:&quot;underline&quot;)[//&#39;&#39;You know what I&#39;m thinking right now, right, word genius?&#39;&#39;//]&quot;]
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="55" name="Thinking" tags="Boss" position="1650,750" size="100,100">Boss:
 
+(align:&quot;=&gt;&lt;=&quot;)[&quot;(text-style:&quot;underline&quot;)[//&#39;&#39;You know what I&#39;m thinking right now, word genius? This pink slip sure does.&#39;&#39;//]&quot;]
+
+
+
+
+Whatever you say probably won&#39;t change the Boss&#39;s mind. Maybe you can get Barry on your side with the right response...
+
+[[Use ribbing revolver|Thinking Revolver]]
+[[Use sarcasm scanner|Thinking Scanner]]
+[[Use lie laser|Thinking Laser]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="56" name="Thinking Revolver" tags="Boss" position="1650,625" size="100,100">Boss:
+
+(align:&quot;=&gt;&lt;=&quot;)[&quot;I&#39;m kidding, I don&#39;t think!&quot;]
+
+
+
+
+[[Rethink statement (go back)|Thinking]]
+[[Respond to current statement|Thinking Ribbing]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="57" name="Thinking Scanner" tags="Boss" position="1775,725" size="100,100">Boss:
+
+(align:&quot;=&gt;&lt;=&quot;)[&quot;You&#39;re no word genius.&quot;]
+
+
+
+
+[[Rethink statement (go back)|Thinking]]
+[[Respond to current statement|Thinking Sarcasm]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="58" name="Thinking Laser" tags="Boss" position="1950,500" size="100,100">Boss:
+
+(align:&quot;=&gt;&lt;=&quot;)[&quot;I don&#39;t have a pink slip for you...yet.&quot;]
+
+
+
+
+[[Rethink statement (go back)|Thinking]]
+[[Respond to current statement|Thinking Lie]]
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="59" name="Thinking Sarcasm" tags="Boss" position="2175,600" size="100,100">&quot;Hey, I am a word genius!&quot;
+
+The Boss looks unimpressed.
+
+Boss: &quot;A genius would know when their job is toast...&quot;
+
+[[They would?|Allies Enter]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="60" name="Thinking Ribbing" tags="Boss" position="1825,475" size="100,100">&quot;Good one, Boss. You don&#39;t think at all! You let my application pass, after all.&quot;
+
+While Barry holds in laughter, the Boss&#39;s desk shakes in fury.
+
+(set: $Barry to true)
+(set: $Allies to it + 1)
+[[Uh oh...|Allies Enter]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="61" name="Thinking Lie" tags="Boss" position="2075,500" size="100,100">&quot;Hold on, you can&#39;t fire me, you&#39;ve got no proof!&quot;
+
+The Boss chuckled, as if you&#39;re a clown and mime hybrid.
+
+Boss: &quot;Like I need proof! All I need to do is say the magic words...&quot;
+
+[[Uhhh...|Allies Enter]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="62" name="Allies Enter" tags="" position="2175,375" size="100,100">(if: $Allies is 5)[(goto: &quot;New Boss&quot;)]
+(else-if: $Allies &gt; 2)[(goto: &quot;Keep Job&quot;)]
+(else-if: $Allies &gt; 0)[(goto: &quot;New Company&quot;)]
+(else:)[(goto: &quot;Sacrifice&quot;)]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="63" name="New Boss" tags="Boss" position="2300,300" size="100,100">(text-colour:purple)[BAM!]
+
+All of a sudden, your massive group of [[allies|First Ally]] storm into the Boss&#39;s office to aid you!
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))
+</tw-passagedata><tw-passagedata pid="64" name="Keep Job" tags="Boss" position="2300,425" size="100,100">Bam!
+
+Suddenly, your group of [[allies|First Ally]] come in to help you out!
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="65" name="New Company" tags="Boss" position="2300,550" size="100,100">bam...
+
+Fortunately, your few [[allies|First Ally]] arrive just in time to rally against the Boss!
+(if: $Allies is 1 and $Barry is true)[(goto: &quot;Barry Stands Up&quot;)]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="66" name="Sacrifice" tags="" position="1050,225" size="100,100">With no allies to aid you (even Barry is stunned with fear), you are sacrificed to the (bg:orange)[word gremlins] for harvesting.
 
 (text-colour:red)[RIP JOB]
 
-[[Restart Game|Intro]]</tw-passagedata></tw-storydata>
+[[Restart Game|Intro]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="67" name="John Stands Up" tags="Boss" position="2425,525" size="100,100">John: &quot;Don&#39;t think about firing them, Boss! They slew that demon that was annoying everyone in the office!&quot;
+
+John then slams the demon&#39;s head, which has begun emitting a rotten aroma, onto the Boss&#39;s desk.
+(set: $John to false)
+[[&quot;Thanks, John!|First Ally]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="68" name="First Ally" tags="" position="2425,400" size="100,100">(if: $John is true)[(goto: &quot;John Stands Up&quot;)]
+(else-if: $Alex is true)[(goto: &quot;Alex Stands Up&quot;)]
+(else-if: $Paul is true)[(goto: &quot;Paul Stands Up&quot;)]
+(else-if: $Jessie is true)[(goto: &quot;Jessie Stands Up&quot;)]
+(else-if: $Barry is true)[(goto: &quot;Barry Stands Up&quot;)]
+(else-if: $Allies is 5)[(goto:&quot;Boss Sacrificed&quot;)]
+(else-if: $Allies &gt; 2)[(goto:&quot;Job Saved&quot;)]
+(else:)[(goto: &quot;Boss Unimpressed&quot;)]</tw-passagedata><tw-passagedata pid="69" name="Alex Stands Up" tags="Boss" position="2425,275" size="100,100">Alex: &quot;Sorry Boss, but this new face is not going anywhere; their level of embarassment is way too high to send them off onto the streets.&quot;
+
+(set: $Alex to false)
+[[&quot;Thanks, Alex...I guess&quot;|First Ally]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="70" name="Paul Stands Up" tags="Boss" position="2550,275" size="100,100">With one hand reaching out from your phone screen, Paul finger-walks to the Boss, your phone now acting as his new vessel.
+
+Paul: &quot;That&#39;s not happening, Boss. This infinite source of coolness covered for me when I didn&#39;t feel like going to work today.&quot;
+
+Paul: &quot;...oh wait.&quot;
+
+(set: $Paul to false)
+[[&quot;Looks like you might be joining me, Paul.&quot;|First Ally]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="71" name="Jessie Stands Up" tags="Boss" position="2550,400" size="100,100">Jessie: &quot;Just a second, Boss. I don&#39;t know this one that well, but they cared enough to bring me this amazing cake for my birthday!&quot;
+
+Jessie then vacuums up some more of her cake.
+
+(set: $Jessie to false) 
+[[&quot;Thanks...Jessie, was it?&quot;|First Ally]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="72" name="Barry Stands Up" tags="Boss" position="2550,525" size="100,100">Barry, breaking out of his frightened trance, finally approaches the Boss to watch your back.
+
+Barry: &quot;No, Boss. The Newbie&#39;s not leaving. Not unless you&#39;re willing to fire me.&quot;
+(set: $Barry to false)
+[[&quot;Barry...&quot;|First Ally]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="73" name="Boss Sacrificed" tags="Boss" position="2125,725" size="100,100">With the aid of your co-workers, you snatch the Boss&#39;s exclamation point and drag him to the chamber of the (bg:orange)[word gremlins], just beside his office.
+
+
+1...
+
+
+
+2...
+
+
+
+[[3]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="74" name="Job Saved" tags="Boss" position="1975,700" size="100,100">Defeated, the Boss stares at everyone blankly.
+
+Boss: &quot;...fine, they can stay! But I expect good work from you, (text-style:&quot;underline&quot;)[time traveler!]&quot;
+
+You and your allies embrace, having saved your [[job|Job in the Future]] from termination.
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="75" name="END" tags="" position="1950,200" size="100,100">(bg:green)[(align:&quot;=&gt;&lt;=&quot;)[[[END (Restart Game)|Intro]]]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="76" name="Job in the Future" tags="Desk" position="2100,850" size="100,100">As the years pass, you grow more proficient with words, training with your working comrades through friendly ribbing, sarcastic fun, and loads of laughter-filled lying.
+
+[[Your dreams have come true...|End?]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="77" name="End?" tags="" position="2225,850" size="100,100">(if: $Assaults &gt; 0)[(goto: &quot;Arrest&quot;)]
+(else:)[(goto:&quot;END&quot;)]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="78" name="Arrest" tags="" position="2050,300" size="100,100">...Well, at least until the police finally arrest you for bakery assault.
+
+
+(bg:yellow)[(align:&quot;=&gt;&lt;=&quot;)[[[Maybe don&#39;t hit anyone with a baguette next time...(Restart Game)|Intro]]]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="79" name="3" tags="" position="2250,725" size="100,100">Boss: &quot;WAHHHHhhhhhhhh...............&quot;
+
+[[Take the Boss&#39;s desk for yourself|The Throne]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="80" name="The Throne" tags="" position="2375,725" size="100,100">With the title of &quot;Boss&quot;, you lead your co-workers to prosperity, developing new word tools like the &#39;assertion axe&#39;, and the &#39;metaphor mace&quot;.
+
+The company goes from mult-millions, to multi-trillions.
+
+[[You are now the master of words.|End?]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="81" name="Boss Unimpressed" tags="Boss" position="2350,850" size="100,100">Boss: &quot;...This is your army? We&#39;ll I hope they enjoy joining you, cause you&#39;re all (text-colour:red)[FIRED]!&quot;
+
+[[Grab final paycheck|FIRED]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="82" name="FIRED" tags="" position="2375,975" size="100,100">With your small circle of friends, you decide to create a [[new word company|Company Description]].
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata><tw-passagedata pid="83" name="Company Description" tags="" position="2350,1100" size="100,100">While it starts small, you and your team slowly build a modest profit selling novel word products, such as &#39;worden dolls&#39; and &#39;para-giraffes&#39;.
+
+It&#39;s not where you thought your passion would lead you to, but it feels right in a way, being surrounded by words and by others who are just as appreciative of words.
+
+[[Things are looking up...|End?]]
+
+(hide:?sidebar)
+(change: &quot;Barry&quot;, (text-colour: grey))
+(change: &quot;John&quot;, (text-colour: cyan))
+(change: &quot;Alex&quot;, (text-colour: purple))
+(change: &quot;Paul&quot;, (text-colour: magenta))
+(change: &quot;Jessie&quot;, (text-colour:orange))</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
